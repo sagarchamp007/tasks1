@@ -1,0 +1,15 @@
+TWO TASKS ARE DONE.
+
+REQUIREMENTS-
+   python3 or above.
+
+RUN-
+  Basic HTTP Server with Authentication-
+  	1.pip install -r requirements.txt
+	2.gunicorn -c gunicorn_config.py run:app
+	3. TEST Eg-
+	         curl --user sagar:sagar123 "http://0.0.0.0:8000/me?delay=10&increment=1" &
+		 curl --user mukesh:mukesh123 "http://0.0.0.0:8000/me?delay=1&increment=1" &
+
+  Finding proximity-
+     python proximity.py proximity_inp 2
